@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +6,13 @@
     <title>
         {% block title %}Default Title{% endblock %}
     </title>
+
+    <link rel="stylesheet" href="{% static 'contact/css/style.css' %}">
+    <script src="{% static 'contact/js/app.js' %}"></script>
 </head>
 <body>
+
+    <img src="{% static 'contact/img/logo.png' %}">
 
   {% block content %}
      Page Content Here
